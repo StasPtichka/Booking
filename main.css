@@ -1,0 +1,14 @@
+#personalArea, #homeEntry, #homeCreateAnAccount {
+	float: right;
+	text-align: center;
+}
+
+#entryE-mail {
+	text-align: ;
+}
+
+.button {
+	float: center;
+	/*text-align: center;*/
+	cursor: pointer;
+}
