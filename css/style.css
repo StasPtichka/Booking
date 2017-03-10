@@ -1,0 +1,61 @@
+* {
+	margin-left: 0px; 
+	margin-right: 0px;
+
+}
+
+.personalArea a {
+	text-decoration: none;
+}
+
+.header h1, .header h3 {
+	margin: 0px;
+	margin-left: 200px;
+	padding: 0px;
+}
+
+.header {
+	background-color: black;
+	color: white;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+.Reg {
+	float: right;
+	margin-left: 70%;
+	margin-right: 20px;
+	padding-top: 30px;
+}
+
+.login {
+	float: right;
+	margin-left: 70%;
+	margin-right: 20px;
+	margin-top: 10px;
+	padding: 30px;
+	padding-top: 25px;
+	background-color: #c0c0c0;  
+}
+
+.login h4 {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+.login_email_pass p {
+	margin: 0px;
+	padding-bottom: 10px;
+}
+
+.login_email_pass a {
+	text-decoration: none;
+}
+
+.button_sign {
+	cursor: pointer;
+	width: 50%;
+	text-align: center;
+}

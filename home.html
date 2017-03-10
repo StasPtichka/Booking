@@ -1,29 +1,38 @@
 <!DOCTYPE html >
 <html ng-app='appHome'>
 
-<head>
 
+<head>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
     <script src="homePage.js"></script>
+
     <meta charset="utf-8">
     <title>Бронирование мест в кинотеатре</title>
-    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
-<body>
-
-    <header>
-        <div id="personalArea">
-            <p><a href="#entry">войти</a> или <a href="#create">создать аккаунт</a></p>
-        </div>
-        <br>
-    </header>
-    <div>
-        <span class = "chek-element" ng-show = "sign">{{$scope.email}}</span>
-        
-        <ng-view></ng-view>
+<body >
+    <div class="header">
+        <h1>BronKino</h1>
+        <h3>Бронирование мест в кинотеатре</h3>
     </div>
+    <div class="Reg">
+        <div class="personalArea">
+            <p>   <a href="#create">создать аккаунт</a><br /></p><br>
+        </div>
+    </div>
+    <div class="login">
+        <div class="login_email_pass" ng-controller="Entry">
+            <h4>Личный кабинет</h4>
+            <p><input ng-model = "email" type="text" placeholder="Email address" size="30"><br /></p>
+            <p><input ng-model = "pass" type="text" placeholder="Password" size="30"></p>
+            <button  ng-click="buttEntry()" ng-value="but" class="button_sign">Войти  </button>
+            <a href="#create">cоздать аккаунт</a>
+        </div>
+    </div>
+    <div ng-view></div>
 </body>
 </html>

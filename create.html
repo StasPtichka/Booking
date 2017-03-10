@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html ng-app='App'>
+<html >
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
-<script src="scriptReg.js"></script>
 
 <head>
-
 	<meta charset="utf-8">
 	<title>Бронирование мест в кинотеатре</title>
 	<link rel="stylesheet" href="main.css">
@@ -14,17 +12,12 @@
 
 <body ng-controller="appController" >
 	<header>
-		<div id=homeCreateAnAccount></div><br />
+		<div id=homeCreateAnAccount></div>
 	</header>
-	<div id="entryE-mail"><p>
-		<b>Ваш e-mail адрес:</b><br>
-		<input ng-model = "email"  type="text" size="40">
-		<br>
-		<b>Пароль:</b><br>
-		<input ng-model = "pass" type="text" size="40">
-		<br>
-		<b>Повторите пароль:</b><br>
-		<input ng-model = "passRetry" type="text" size="40">
+	<br id="createE-mail">
+		<input ng-model = "email"  type="text" placeholder="Email address" size="40">
+		<input ng-model = "pass" type="text" placeholder="Password" size="40">
+		<input ng-model = "passRetry" type="text" placeholder="Retry password" size="40">
 	</p></div>
 	<button ng-click = "buttonReg()" ng-value = "but" id="button">Создать аккаунт</button>
 </body>
